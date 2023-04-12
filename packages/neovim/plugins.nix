@@ -141,6 +141,7 @@ with vimPlugins; [
   lualine-lsp-progress
   scope-nvim
   bufferline-nvim
+  nvim-bufdel
   nvim-navic
 
   # Termianl

@@ -58,7 +58,6 @@ let
     '';
 in
 mkLuaConfigs [
-  ./bufferline.lua
   ./scope.lua
   ./cmp.lua
   ./alpha.lua
@@ -93,6 +92,7 @@ mkLuaConfigs [
   ./toggleterm.lua
   ./tree-sitter.lua
   ./tree.lua
+  ./bufferline.lua
   ./trouble.lua
   ./twilight.lua
   ./vim.lua

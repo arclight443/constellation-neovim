@@ -10,32 +10,27 @@ tree.setup {
 	view = {
 		mappings = {
 			list = {
-				{ key = "s", action = "vsplit" },
-				{ key = "t", action = "tabnew" },
-				{ key = "S", action = "split" },
-				{ key = "O", action = "system_open" },
+				{ key = "s",     action = "vsplit" },
+				{ key = "t",     action = "tabnew" },
+				{ key = "S",     action = "split" },
+				{ key = "O",     action = "system_open" },
 				{ key = "<C-r>", action_cb = reload_tree },
 			}
 		}
 	}
 }
 
-local function map(mode, lhs, rhs, opts)
-	local options = { noremap = true }
 
-	if opts then
-		options = vim.tbl_extend("force", options, opts)
-	end
-
-	vim.api.nvim_set_keymap(mode, lhs, rhs, options)
-end
+local keymap = vim.keymap.set
+local opts = { silent = true }
 
 -- Toggle the file tree.
-map("n", "<C-n>", ":NvimTreeToggle<cr>", { silent = true })
+keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)
+keymap("n", "<C-f>", ":NvimTreeFocus<CR>", opts)
 
 which_key.register({
 	g = {
 		name = "Go",
-		f = { "<cmd>:NvimTreeFindFile<cr>", "Current File" },
+		f = { "<cmd>:NvimTreeFindFile<CR>", "Current File" },
 	},
 }, { mode = "n", prefix = "<leader>", silent = true })
