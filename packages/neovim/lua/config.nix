@@ -98,5 +98,6 @@ mkLuaConfigs [
   ./vim.lua
   ./which-key.lua
   ./wrap-toggle.lua
+  ./zk.lua
 ]
 

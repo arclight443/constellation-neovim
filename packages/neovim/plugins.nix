@@ -104,7 +104,7 @@ with vimPlugins; [
   # Autocomplete
   nvim-cmp
   cmp-nvim-lsp
-
+  
   # Snippets
   luasnip
   cmp_luasnip
@@ -164,18 +164,12 @@ with vimPlugins; [
   vim-markdown
   vim-markdown-toc
 
-  # Dotbox
-  dotbox-nvim
-
-  # Astro
-  vim-astro
-
   # Tmux
   vim-tmux-navigator
 
   # Icon Picker
   icon-picker
 
-  # Prisma
-  vim-prisma
+  # Note Taking
+  zk-nvim
 ]

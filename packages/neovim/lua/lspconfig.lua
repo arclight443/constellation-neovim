@@ -153,18 +153,6 @@ lsp.dockerls.setup {
 	capabilities = capabilities,
 }
 
--- Prisma
-lsp.prismals.setup {
-	on_attach = on_attach,
-	cmd = { "@prismaLanguageServer@", "--stdio" },
-	capabilities = capabilities,
-	settings = {
-		prisma = {
-			prismaFmtBinPath = "@prismaFormat@",
-		}
-	},
-}
-
 -- Tailwind
 lsp.tailwindcss.setup {
 	on_attach = on_attach,
@@ -192,19 +180,6 @@ lsp.lua_ls.setup {
 				library = vim.api.nvim_get_runtime_file("", true),
 				checkThirdParty = false,
 			}
-		},
-	},
-}
-
--- Astro
-vim.g.astro_typescript = "enable"
-
-lsp.astro.setup {
-	on_attach = on_attach,
-	cmd = { "@astroLanguageServer@", "--stdio" },
-	init_options = {
-		typescript = {
-			serverPath = "@typescript@",
 		},
 	},
 }
