@@ -13,7 +13,6 @@ if not which_key_status_ok then
 	return
 end
 
-
 local signs = { error = " ", warning = " ", hint = " ", info = " " }
 
 local severities = {
@@ -43,23 +42,21 @@ bufferline.setup {
 		offsets = {
 			{ filetype = "NvimTree", text = "NvimTree", highlight = "Directory", text_align = "left" }
 		},
-
 	},
+
 	highlights = {
 		fill = {
-			fg = { attribute = "fg", highlight = "#ff0000" },
+			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
 		},
 		background = {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
 		},
-
 		buffer_visible = {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
 		},
-
 		close_button = {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
@@ -68,7 +65,6 @@ bufferline.setup {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
 		},
-
 		tab_selected = {
 			fg = { attribute = "fg", highlight = "Normal" },
 			bg = { attribute = "bg", highlight = "Normal" },
@@ -81,7 +77,6 @@ bufferline.setup {
 			fg = { attribute = "fg", highlight = "TabLineSel" },
 			bg = { attribute = "bg", highlight = "Normal" },
 		},
-
 		duplicate_selected = {
 			fg = { attribute = "fg", highlight = "TabLineSel" },
 			bg = { attribute = "bg", highlight = "TabLineSel" },
@@ -97,7 +92,6 @@ bufferline.setup {
 			bg = { attribute = "bg", highlight = "TabLine" },
 			italic = true,
 		},
-
 		modified = {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
@@ -110,7 +104,6 @@ bufferline.setup {
 			fg = { attribute = "fg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
 		},
-
 		separator = {
 			fg = { attribute = "bg", highlight = "TabLine" },
 			bg = { attribute = "bg", highlight = "TabLine" },
