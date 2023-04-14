@@ -16,7 +16,7 @@
 
       src = ./.;
 
-      overlay-package-namespace = "comfynvim";
+      overlay-package-namespace = "constellation";
 
       alias.packages.default = "neovim";
     };
