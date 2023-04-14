@@ -56,7 +56,6 @@ tree.setup {
 		bufmap('q', api.tree.close, opts('Close'))
 		bufmap('r', api.fs.rename, opts('Rename'))
 		bufmap('<C-r>', api.tree.reload, opts('Refresh'))
-		bufmap('s', api.node.run.system, opts('Run System'))
 		bufmap('S', api.tree.search_node, opts('Search'))
 		bufmap('U', api.tree.toggle_custom_filter, opts('Toggle Hidden'))
 		bufmap('W', api.tree.collapse_all, opts('Collapse'))
