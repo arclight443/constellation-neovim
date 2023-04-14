@@ -96,8 +96,6 @@ local capabilities = require("cmp_nvim_lsp").default_capabilities()
 -- Configure servers with common settings.
 local servers = {
 	'rnix',
-	'sqls',
-	'gopls',
 	'rust_analyzer',
 }
 
@@ -236,7 +234,6 @@ prettier.setup {
 	cli_options = {
 		-- Default to *only* config given in a project, unless none exists.
 		config_precedence = "prefer-file",
-
 		-- Prettier config if no project specific configuration is found.
 		use_tabs = true,
 		print_width = 120,
