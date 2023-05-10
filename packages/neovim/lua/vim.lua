@@ -1,6 +1,7 @@
 vim.g.mapleader = " "
 vim.opt.termguicolors = true
 vim.opt.timeoutlen = 250
+vim.opt.ignorecase = true
 vim.opt.smartcase = true
 -- vim.opt.ttimeoutlen = 0
 
@@ -25,4 +26,5 @@ vim.api.nvim_create_autocmd(
 		pattern = { "*.txt", "*.md", "*.tex" },
 		command = "setlocal spell",
 	}
+)
 )
