@@ -104,7 +104,7 @@ with vimPlugins; [
   # Autocomplete
   nvim-cmp
   cmp-nvim-lsp
-  
+
   # Snippets
   luasnip
   cmp_luasnip
@@ -132,10 +132,11 @@ with vimPlugins; [
   todo-comments-nvim
   delimitMate
   twilight-nvim
+  nvim-colorizer-lua
 
   # Theme
   gruvbox-flat-nvim
-  
+
   # Status Line & Buffer Line
   lualine-nvim
   lualine-lsp-progress
@@ -144,7 +145,7 @@ with vimPlugins; [
   nvim-bufdel
   nvim-navic
 
-  # Termianl
+  # Terminal
   toggleterm-nvim
 
   # Git
