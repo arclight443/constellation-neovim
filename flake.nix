@@ -17,7 +17,6 @@
       src = ./.;
 
       overlay-package-namespace = "constellation";
-      channels-config.allowUnfree = true;
 
       alias.packages.default = "neovim";
     };
