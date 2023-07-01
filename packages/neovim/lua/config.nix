@@ -86,7 +86,6 @@ mkLuaConfigs [
   ./lualine.lua
   ./neoscroll.lua
   ./colorscheme.lua
-  ./nvim-colorizer.lua
   ./telescope.lua
   ./tmux-navigator.lua
   ./todo-comments.lua
