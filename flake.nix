@@ -15,6 +15,7 @@
       inherit inputs;
 
       src = ./.;
+      channels-config.allowUnfree = true;
 
       overlay-package-namespace = "constellation";
 
